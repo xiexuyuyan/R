@@ -1,0 +1,11 @@
+- Define a function using `name <- function(...args...) {...body...}`.
+- Call a function using `name(...values...)`.
+- R looks for variables in the current stack frame before looking for them at the top level.
+  - the local arguments and global arguments
+- Use `help(thing)` to view help for something.
+  - eg: `help(lapply)`
+- Put comments at the beginning of functions to provide help for that function.
+  - mean to write some argument list, and annotate your code!
+  - Formal documentation for R functions is written in separate `.Rd` using a markup language similar to `LaTeX`. You see the result of this documentation when you look at the help file for a given function, e.g. `?read.csv`. The `roxygen2` package allows R coders to write documentation alongside the function code and then process it into the appropriate `.Rd` files. You will want to switch to this more formal method of writing documentation when you start writing more complicated R projects.
+- Specify default values for arguments when defining a function using `name = value` in the argument list.
+- Arguments can be passed by matching based on `name`, by `position`, or by `omitting them` (in which case the default value is used).
